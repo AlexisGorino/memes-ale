@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>¡Cobramos en SQUAD! - Feliz Mes y Buenas Vibras</title>
+  <script src="https://cdn.tailwindcss.com">
+    window.addEventListener('load', function() {
+      setTimeout(function() {
+        confetti({ particleCount: 90, spread: 80, origin: { y: 0.65 }, colors: ['#10b981','#34d399','#f59e0b','#38bdf8'] });
+      }, 500);
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js">
+    window.addEventListener('load', function() {
+      setTimeout(function() {
+        confetti({ particleCount: 90, spread: 80, origin: { y: 0.65 }, colors: ['#10b981','#34d399','#f59e0b','#38bdf8'] });
+      }, 500);
+    });
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #0f172a;
+      color: #f8fafc;
+    }
+    .gradient-text {
+      background: linear-gradient(135deg, #38bdf8 0%, #818cf8 50%, #c084fc 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .card-glass {
+      background: rgba(30, 41, 59, 0.7);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .meme-img-container {
+      position: relative;
+      overflow: hidden;
+      border-radius: 1rem;
+      aspect-ratio: 16 / 9;
+      background: #1e293b;
+    }
+    .meme-img-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+    .meme-img-container:hover img {
+      transform: scale(1.03);
+    }
+  </style>
+</head>
+<body class="py-10 px-4 min-h-screen flex justify-center items-center">
+
+  <div class="max-w-2xl w-full card-glass rounded-3xl p-6 sm:p-10 shadow-2xl relative overflow-hidden">
+    
+    <!-- Header / Branding SQUAD SRL -->
+    <div class="flex items-center justify-between pb-6 border-b border-slate-700/80 mb-8">
+      <div class="flex items-center gap-3">
+        <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center font-extrabold text-2xl text-white shadow-lg shadow-cyan-500/30">
+          S
+        </div>
+        <div>
+          <h1 class="text-xl font-bold tracking-tight text-white">SQUAD SRL</h1>
+          <p class="text-xs text-cyan-400 font-semibold tracking-wider uppercase">GET WORK DONE</p>
+        </div>
+      </div>
+      <span class="px-3 py-1 text-xs font-semibold rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 flex items-center gap-1.5">
+        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> Depósitos Realizados
+      </span>
+    </div><!-- MEME 1: Guillermo Francella REAL -->
+    <div class="mb-8">
+      <div class="meme-img-container shadow-md border border-slate-700">
+        <img src="https://mas10.ar/wp-content/uploads/2024/07/hermosa-manana-verdad-1.png" alt="Francella - Hermosa mañana" onerror="this.onerror=null; this.src='https://picsum.photos/800/450?random=1';">
+      </div>
+    </div><!-- MEME 2: placa roja estilo noticiero argentino -->
+    <div class="mb-8">
+      <div class="meme-img-container shadow-md border border-slate-700">
+        <img src="https://www.radiopopularsanluis.com.ar/galeria/fotos/2019/10/27/o_69926.jpg" alt="Placa roja argentina" onerror="this.onerror=null; this.src='https://picsum.photos/800/450?random=2';">
+      </div>
+    </div>
+
+    <!-- ANUNCIO PRINCIPAL + MEME 3: El Comandante Fort REAL -->
+    <div class="bg-gradient-to-r from-emerald-950/60 to-slate-900 border border-emerald-500/30 rounded-2xl p-6 mb-8 text-center relative overflow-hidden shadow-xl">
+      <div class="relative z-10">
+        
+        <div class="meme-img-container mb-6 border border-emerald-500/40">
+          <img src="https://tn.com.ar/resizer/v2/ricardo-fort-los-mejores-memes-del-comandante-a-8-anos-de-su-muerte-ZB6HCM7EDVCJLM2RWSWJFFDUUQ.jpg?auth=faf97a3009eca9d981fde6eebff1b0435adb47afd2a50232a537559dffee73cd&width=1440" alt="Ricardo Fort El Comandante" onerror="this.onerror=null; this.src='https://picsum.photos/800/450?random=3';">
+        </div>
+        <button onclick="dispararCrocantes()" class="bg-gradient-to-r from-emerald-500 to-teal-400 hover:from-emerald-400 hover:to-teal-300 text-slate-950 font-extrabold py-3.5 px-8 rounded-xl shadow-lg shadow-emerald-500/25 transform hover:-translate-y-0.5 transition-all duration-200">
+          💸 LLUVIA DE CROCANTES 💸
+        </button>
+      </div>
+    </div>
+
+    <!-- MEME 4: cierre visual -->
+    <div class="mb-8">
+      <div class="meme-img-container shadow-md border border-slate-700">
+        <img src="https://resizer.glanacion.com/resizer/v2/xuxa-se-convirtio-en-una-estrella-de-la-Y75QSSIQTZAOBJFYH3UZREXBXE.jpg?auth=dc9e5406185501ca9ffab6167aae7db493b2ec4e35009d6ffc6e447e5231e39e&height=525&quality=70&smart=true&width=420" alt="Xuxa - Besitos besitos chau chau" onerror="this.onerror=null; this.src='https://picsum.photos/800/450?random=4';">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end justify-center p-4"><p class="text-white font-black text-xl sm:text-2xl drop-shadow-md text-center">BESITOS BESITOS · CHAU CHAU 👋💋</p></div>
+      </div>
+    </div>
+
+    <!-- Firma corporativa SQUAD SRL -->
+    <div class="mt-10 pt-6 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center font-bold text-slate-300 border border-slate-700">
+          AG
+        </div>
+        <div class="text-left">
+          <p class="font-bold text-slate-200 text-sm">Alexis Gorino</p>
+          <p class="text-slate-400">Responsable RRHH - Recursos Humanos</p>
+          <p class="text-cyan-400 font-semibold">SQUAD SRL</p>
+        </div>
+      </div>
+      <div class="text-center sm:text-right">
+        <p><a href="https://wearesquad.co" target="_blank" class="hover:text-cyan-400 transition-colors">wearesquad.co</a></p>
+        <p class="mt-0.5">+54 9 11 2457-2696</p>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    function dispararCrocantes() {
+      const duration = 3 * 1000;
+      const animationEnd = Date.now() + duration;
+      const defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 0 };
+
+      function randomInRange(min, max) {
+        return Math.random() * (max - min) + min;
+      }
+
+      const interval = setInterval(function() {
+        const timeLeft = animationEnd - Date.now();
+
+        if (timeLeft <= 0) {
+          return clearInterval(interval);
+        }
+
+        const particleCount = 50 * (timeLeft / duration);
+        confetti(Object.assign({}, defaults, { 
+          particleCount, 
+          origin: { x: randomInRange(0.1, 0.3), y: Math.random() - 0.2 },
+          colors: ['#10b981', '#34d399', '#f59e0b', '#38bdf8']
+        }));
+        confetti(Object.assign({}, defaults, { 
+          particleCount, 
+          origin: { x: randomInRange(0.7, 0.9), y: Math.random() - 0.2 },
+          colors: ['#10b981', '#34d399', '#f59e0b', '#38bdf8']
+        }));
+      }, 250);
+    }
+  
+    window.addEventListener('load', function() {
+      setTimeout(function() {
+        confetti({ particleCount: 90, spread: 80, origin: { y: 0.65 }, colors: ['#10b981','#34d399','#f59e0b','#38bdf8'] });
+      }, 500);
+    });
+  </script>
+<!-- Imágenes meme: Francella (+10), Ricardo Fort (TN), placa roja (Radio Popular San Luis). -->
+</body>
+</html>
